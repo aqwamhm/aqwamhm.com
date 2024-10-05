@@ -1,3 +1,4 @@
+import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import {
     SiBootstrap,
     SiCodeigniter,
@@ -98,6 +99,16 @@ export const aboutMe: AboutMe = {
     paragraph:
         "My name is Aqwam Hizbal Muhshiy, and I’m a full-stack developer as well as an Information Technology student at the International Open University. With a strong foundation in web development, I’ve built dynamic applications that solve real-world problems. I’m always commited to learn and push my skills further, whether through formal education, certifications, or hands-on projects. My goal is to build impactful, user-focused solutions that make a difference.",
 };
+
+export const socials = [
+    { link: "https://instagram.com/ahizmuh", icon: FaInstagram },
+    { link: "https://www.linkedin.com/in/aqwam", icon: FaLinkedin },
+    { link: "https://github.com/aqwamhm", icon: FaGithub },
+    {
+        link: "https://api.whatsapp.com/send?phone=6289615545511",
+        icon: FaWhatsapp,
+    },
+];
 
 export const skills: Skills = {
     headline: "My Skills",

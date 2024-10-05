@@ -1,13 +1,6 @@
+import { socials } from "@/content";
 import Link from "next/link";
 import React from "react";
-import { FaInstagram, FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
-
-const socials = [
-    { link: "", icon: FaInstagram },
-    { link: "", icon: FaLinkedin },
-    { link: "", icon: FaGithub },
-    { link: "", icon: FaWhatsapp },
-];
 
 export const SocialIcons = () => {
     return (
