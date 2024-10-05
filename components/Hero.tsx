@@ -14,7 +14,7 @@ export const Hero = () => {
         >
             <DotPattern
                 className={cn(
-                    "[mask-image:radial-gradient(450px_circle_at_center,white,transparent)]"
+                    "[mask-image:radial-gradient(275px_circle_at_center,white,transparent)]"
                 )}
             />
             <Container className="text-center text-white z-10">
