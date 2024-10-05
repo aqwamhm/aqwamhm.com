@@ -61,10 +61,10 @@ export const CertificationsAndAwards = () => {
                     {selectedCertification && (
                         <DialogContent className="max-w-3xl max-h-[80vh] overflow-y-scroll bg-accent/15 backdrop-blur-sm">
                             <DialogHeader>
-                                <DialogTitle>
+                                <DialogTitle className="text-left">
                                     {selectedCertification.title}
                                 </DialogTitle>
-                                <DialogDescription>
+                                <DialogDescription className="text-left">
                                     {selectedCertification.date}
                                 </DialogDescription>
                             </DialogHeader>
