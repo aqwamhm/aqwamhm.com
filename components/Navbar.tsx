@@ -123,7 +123,7 @@ export function NavbarComponent() {
                         <div className="md:hidden">
                             <button
                                 onClick={() => setIsOpen(!isOpen)}
-                                className="inline-flex items-center justify-center p-2 rounded-md hover:bg-secondary"
+                                className="inline-flex items-center justify-center p-2 rounded-md hover:bg-secondary transition-colors duration-200"
                             >
                                 <span className="sr-only">Open main menu</span>
                                 {isOpen ? (
