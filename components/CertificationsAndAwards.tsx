@@ -9,7 +9,7 @@ import {
     DialogHeader,
     DialogTitle,
 } from "./ui/dialog";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import { Certification, certificationsAndAwards } from "@/content";
 
 export const CertificationsAndAwards = () => {
@@ -79,14 +79,14 @@ export const CertificationsAndAwards = () => {
                                 >
                                     {selectedCertification.images.map(
                                         (image, index) => (
-                                            <Image
+                                            <ExportedImage
                                                 src={image}
                                                 alt={`Certification image ${
                                                     index + 1
                                                 }`}
                                                 className="rounded-lg"
-                                                width={0}
-                                                height={0}
+                                                width={1000}
+                                                height={500}
                                                 sizes="100vw"
                                                 style={{
                                                     width: "100%",

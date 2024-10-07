@@ -1,6 +1,6 @@
 import React from "react";
 import { MagicCard } from "./ui/magic-card";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import { projects } from "@/content";
 import Link from "next/link";
 
@@ -21,7 +21,7 @@ export const Projects = () => {
                         gradientColor="rgb(var(--color-primary))"
                         gradientOpacity={0.4}
                     >
-                        <Image
+                        <ExportedImage
                             src={card.imageSrc}
                             alt={card.title}
                             width={800}

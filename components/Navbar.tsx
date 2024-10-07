@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import Link from "next/link";
 import {
     Tooltip,
@@ -63,7 +63,7 @@ export function NavbarComponent() {
                                             }
                                         >
                                             <div className="relative">
-                                                <Image
+                                                <ExportedImage
                                                     src="/images/logo/aqwamhm-logo.svg"
                                                     alt="AqwamHM Logo"
                                                     width={30}
@@ -74,7 +74,7 @@ export function NavbarComponent() {
                                                             : "opacity-100"
                                                     }`}
                                                 />
-                                                <Image
+                                                <ExportedImage
                                                     src="/images/logo/aqwamhm-palestine-logo.svg"
                                                     alt="AqwamHM Palestine Logo"
                                                     width={30}
