@@ -22,7 +22,7 @@ export const Hero = () => {
                     {hero.headline}
                 </h1>
                 <h2 className="text-lg md:text-2xl mb-7">{hero.subheadline}</h2>
-                <Link href={hero.button.url}>
+                <Link href={hero.button.url} className="inline-block">
                     <ShimmerButton
                         className="mx-auto"
                         shimmerColor="rgb(var(--color-primary))"
