@@ -101,10 +101,19 @@ export const aboutMe: AboutMe = {
 };
 
 export const socials = [
-    { link: "https://instagram.com/ahizmuh", icon: FaInstagram },
-    { link: "https://www.linkedin.com/in/aqwam", icon: FaLinkedin },
-    { link: "https://github.com/aqwamhm", icon: FaGithub },
     {
+        name: "Instagram",
+        link: "https://instagram.com/ahizmuh",
+        icon: FaInstagram,
+    },
+    {
+        name: "Linkedin",
+        link: "https://www.linkedin.com/in/aqwam",
+        icon: FaLinkedin,
+    },
+    { name: "Github", link: "https://github.com/aqwamhm", icon: FaGithub },
+    {
+        name: "Whatsapp",
         link: "https://api.whatsapp.com/send?phone=6289615545511",
         icon: FaWhatsapp,
     },
