@@ -10,9 +10,9 @@ export const Projects = () => {
             <h1 className="text-white text-5xl md:text-6xl text-center font-bold mb-5">
                 Recent Projects
             </h1>
-            <p className="text-white text-center text-lg md:text-xl mb-12">
+            <h2 className="text-white text-center text-lg md:text-xl mb-12">
                 {projects.subheadline}
-            </p>
+            </h2>
             <div className="flex flex-wrap justify-around items-stretch">
                 {projects.projectCards.map((card, index) => (
                     <MagicCard
