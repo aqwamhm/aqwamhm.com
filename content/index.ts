@@ -6,7 +6,9 @@ import {
     SiLivewire,
     SiMysql,
     SiNextdotjs,
+    SiNodedotjs,
     SiNuxtdotjs,
+    SiPrisma,
     SiPwa,
     SiReact,
     SiShadcnui,
@@ -157,6 +159,14 @@ export const projects = {
                 SiPwa,
             ],
             liveLink: "https://quranmurojaah.aqwamhm.com/",
+        },
+        {
+            title: "OWOJ WhatsApp Bot",
+            description:
+                "A WhatsApp bot that automates member reporting for the One Week One Juz community. With intuitive commands, it automatically tracks progress, generates report lists, and sends reminders to help members stay consistent in their Quran reading goals.",
+            imageSrc: "/images/projects/owoj-bot.jpg",
+            tools: [SiNodedotjs, SiPrisma, SiMysql],
+            githubLink: "https://github.com/aqwamhm/owoj-bot",
         },
         {
             title: "My Portfolio",
