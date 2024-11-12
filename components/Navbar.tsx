@@ -113,7 +113,7 @@ export function NavbarComponent() {
                                     <Link
                                         key={index}
                                         href={item.url}
-                                        className="hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
+                                        className="text-white hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
                                     >
                                         {item.text}
                                     </Link>
