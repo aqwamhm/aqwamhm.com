@@ -142,7 +142,7 @@ export function NavbarComponent() {
                                 <Link
                                     key={index}
                                     href={item.url}
-                                    className="hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
+                                    className="text-white hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
                                     onClick={() => setIsOpen(false)}
                                 >
                                     {item.text}
