@@ -176,7 +176,7 @@ export function AiChat() {
                     <form onSubmit={handleSubmit} className="px-3">
                         <div className="flex gap-2">
                             <Input
-                                placeholder="Tell me about Aqwam in a funny way..."
+                                placeholder="Type your question here..."
                                 value={input}
                                 onChange={(e) => setInput(e.target.value)}
                                 onKeyDown={handleKeyDown}
