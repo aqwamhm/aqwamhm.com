@@ -117,7 +117,7 @@ export function AiChat() {
             <Dialog open={open} onOpenChange={setOpen}>
                 <DialogContent className="max-w-3xl max-h-[80vh] h-[600px] flex flex-col bg-accent/15 backdrop-blur-lg">
                     <DialogHeader className="px-4 py-2">
-                        <DialogTitle>AqwamHM.com AI </DialogTitle>
+                        <DialogTitle>AqwamHM.com AI Chat</DialogTitle>
                     </DialogHeader>
 
                     <div
