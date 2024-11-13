@@ -98,16 +98,21 @@ export function AiChat() {
 
     return (
         <>
-            <button
-                onClick={() => setOpen(true)}
-                className="fixed bottom-6 right-6 flex items-center gap-2 rounded-full px-5 py-3 shadow-lg bg-gradient-to-r from-blue-400 to-emerald-400 hover:from-blue-500 hover:to-emerald-500 duration-300 z-[100] group"
-                aria-label="Ask AI"
-            >
-                <Sparkles className="w-5 h-5 text-white" aria-hidden="true" />
-                <span className="text-sm font-semibold text-white tracking-wide">
-                    Ask AI
-                </span>
-            </button>
+            {!open && (
+                <button
+                    onClick={() => setOpen(true)}
+                    className="fixed bottom-6 right-6 flex items-center gap-2 rounded-full px-5 py-3 shadow-lg bg-gradient-to-r from-blue-400 to-emerald-400 hover:from-blue-500 hover:to-emerald-500 duration-300 z-[100] group"
+                    aria-label="Ask AI"
+                >
+                    <Sparkles
+                        className="w-5 h-5 text-white"
+                        aria-hidden="true"
+                    />
+                    <span className="text-sm font-semibold text-white tracking-wide">
+                        Ask AI
+                    </span>
+                </button>
+            )}
             {showNotification && (
                 <ErrorAlert
                     message="Failed to send message. Please try again."
