@@ -15,7 +15,7 @@ import {
     SiTypescript,
     SiVuedotjs,
     SiVuetify,
-} from "react-icons/si";
+} from "@icons-pack/react-simple-icons";
 
 interface NavbarItem {
     text: string;
@@ -40,7 +40,7 @@ interface AboutMe {
 
 interface Skills {
     headline: string;
-    icons: string[];
+    icons: React.ElementType[];
 }
 
 interface ProjectCard {
@@ -124,19 +124,21 @@ export const socials = [
 export const skills: Skills = {
     headline: "My Skills",
     icons: [
-        "html5",
-        "css3",
-        "javascript",
-        "php",
-        "bootstrap",
-        "tailwindcss",
-        "jquery",
-        "vuedotjs",
-        "nuxtdotjs",
-        "react",
-        "nodedotjs",
-        "codeigniter",
-        "laravel",
+        SiBootstrap,
+        SiCodeigniter,
+        SiLaravel,
+        SiLivewire,
+        SiMysql,
+        SiNextdotjs,
+        SiNodedotjs,
+        SiNuxtdotjs,
+        SiPrisma,
+        SiPwa,
+        SiReact,
+        SiShadcnui,
+        SiTypescript,
+        SiVuedotjs,
+        SiVuetify,
     ],
 };
 
