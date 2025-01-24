@@ -8,7 +8,7 @@ export const Projects = () => {
     return (
         <section id="projects" className="pt-16">
             <h1 className="text-white text-5xl md:text-6xl text-center font-bold mb-5">
-                Recent Projects
+                {projects.headline}
             </h1>
             <h2 className="text-white text-center text-lg md:text-xl mb-12">
                 {projects.subheadline}
