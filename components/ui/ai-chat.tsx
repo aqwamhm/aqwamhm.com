@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import Markdown from "react-markdown";
-import { Send, Loader2, Sparkles } from "lucide-react";
+import { Send, Loader2, Sparkles, Trash2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
     Dialog,
@@ -180,6 +180,19 @@ export function AiChat() {
 
                     <form onSubmit={handleSubmit} className="px-3">
                         <div className="flex gap-2">
+                            <div className="flex gap-2">
+                                <Button
+                                    type="button"
+                                    size="icon"
+                                    variant="outline"
+                                    onClick={() => setMessages([])}
+                                    disabled={messages.length === 0}
+                                    className="hover:bg-destructive hover:text-destructive-foreground"
+                                >
+                                    <Trash2 className="w-4 h-4" />
+                                    <span className="sr-only">Clear chat</span>
+                                </Button>
+                            </div>
                             <Input
                                 placeholder="Type your question here..."
                                 value={input}
@@ -188,18 +201,22 @@ export function AiChat() {
                                 disabled={isLoading}
                                 className="text-background flex-1"
                             />
-                            <Button
-                                type="submit"
-                                size="icon"
-                                disabled={isLoading || !input.trim()}
-                            >
-                                {isLoading ? (
-                                    <Loader2 className="w-4 h-4 animate-spin" />
-                                ) : (
-                                    <Send className="w-4 h-4" />
-                                )}
-                                <span className="sr-only">Send message</span>
-                            </Button>
+                            <div className="flex gap-2">
+                                <Button
+                                    type="submit"
+                                    size="icon"
+                                    disabled={isLoading || !input.trim()}
+                                >
+                                    {isLoading ? (
+                                        <Loader2 className="w-4 h-4 animate-spin" />
+                                    ) : (
+                                        <Send className="w-4 h-4" />
+                                    )}
+                                    <span className="sr-only">
+                                        Send message
+                                    </span>
+                                </Button>
+                            </div>
                         </div>
                         <p className="text-center text-white text-xs pt-3">
                             <small>
