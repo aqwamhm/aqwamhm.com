@@ -1,4 +1,4 @@
-import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 import {
     SiBootstrap,
     SiCodeigniter,
@@ -115,9 +115,9 @@ export const socials = [
     },
     { name: "Github", link: "https://github.com/aqwamhm", icon: FaGithub },
     {
-        name: "Whatsapp",
-        link: "https://api.whatsapp.com/send?phone=6289615545511",
-        icon: FaWhatsapp,
+        name: "Youtube",
+        link: "https://www.youtube.com/@AqwamHizbalMuhshiy",
+        icon: FaYoutube,
     },
 ];
 
