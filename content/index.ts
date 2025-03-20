@@ -105,7 +105,7 @@ export const aboutMe: AboutMe = {
 export const socials = [
     {
         name: "Instagram",
-        link: "https://instagram.com/ahizmuh",
+        link: "https://instagram.com/aqwamhm",
         icon: FaInstagram,
     },
     {
