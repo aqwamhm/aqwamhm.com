@@ -21,7 +21,7 @@ export default function Home() {
                 <CertificationsAndAwards />
                 <Contact />
             </Container>
-            <AiChat />
+            {/* <AiChat /> */}
             <Footer />
         </main>
     );
