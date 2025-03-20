@@ -7,7 +7,7 @@ import { Hero } from "@/components/Hero";
 import { NavbarComponent } from "@/components/Navbar";
 import { Projects } from "@/components/Projects";
 import { Skills } from "@/components/Skills";
-import { AiChat } from "@/components/ui/ai-chat";
+// import { AiChat } from "@/components/ui/ai-chat";
 
 export default function Home() {
     return (
