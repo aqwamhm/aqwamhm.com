@@ -2,20 +2,46 @@ import { FaGithub, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 import {
     SiBootstrap,
     SiCodeigniter,
+    SiCodeigniterHex,
+    SiExpress,
+    SiExpressHex,
+    SiGit,
+    SiGithub,
+    SiGitlab,
+    SiJavascript,
+    SiJavascriptHex,
+    SiJquery,
+    SiJqueryHex,
     SiLaravel,
+    SiLaravelHex,
     SiLivewire,
     SiMysql,
+    SiMysqlHex,
     SiNextdotjs,
+    SiNextdotjsHex,
     SiNodedotjs,
+    SiNodedotjsHex,
     SiNuxtdotjs,
+    SiNuxtdotjsHex,
+    SiPhp,
+    SiPhpHex,
+    SiPostgresql,
+    SiPostgresqlHex,
     SiPrisma,
     SiPwa,
     SiReact,
+    SiReactHex,
+    SiRedis,
+    SiRedisHex,
     SiShadcnui,
+    SiTailwindcss,
     SiTypescript,
+    SiTypescriptHex,
     SiVuedotjs,
+    SiVuedotjsHex,
     SiVuetify,
 } from "@icons-pack/react-simple-icons";
+import { color } from "framer-motion";
 
 interface NavbarItem {
     text: string;
@@ -36,11 +62,6 @@ interface Hero {
 interface AboutMe {
     headline: string;
     paragraph: string;
-}
-
-interface Skills {
-    headline: string;
-    icons: React.ElementType[];
 }
 
 interface ProjectCard {
@@ -121,24 +142,60 @@ export const socials = [
     },
 ];
 
-export const skills: Skills = {
-    headline: "My Skills",
-    icons: [
-        SiBootstrap,
-        SiCodeigniter,
-        SiLaravel,
-        SiLivewire,
-        SiMysql,
-        SiNextdotjs,
-        SiNodedotjs,
-        SiNuxtdotjs,
-        SiPrisma,
-        SiPwa,
-        SiReact,
-        SiShadcnui,
-        SiTypescript,
-        SiVuedotjs,
-        SiVuetify,
+export const skills = {
+    headline: "Tech Stack",
+    skillList: [
+        {
+            category: "Languages",
+            items: [
+                { name: "PHP", icon: SiPhp, color: SiPhpHex },
+                {
+                    name: "JavaScript",
+                    icon: SiJavascript,
+                    color: SiJavascriptHex,
+                },
+                {
+                    name: "TypeScript",
+                    icon: SiTypescript,
+                    color: SiTypescriptHex,
+                },
+            ],
+        },
+        {
+            category: "Front-end",
+            items: [
+                { name: "ReactJS", icon: SiReact, color: SiReactHex },
+                { name: "NextJS", icon: SiNextdotjs, color: SiNextdotjsHex },
+                { name: "VueJS", icon: SiVuedotjs, color: SiVuedotjsHex },
+                { name: "NuxtJS", icon: SiNuxtdotjs, color: SiNuxtdotjsHex },
+                { name: "jQuery", icon: SiJquery, color: SiJqueryHex },
+            ],
+        },
+        {
+            category: "Back-end",
+            items: [
+                { name: "NodeJS", icon: SiNodedotjs, color: SiNodedotjsHex },
+                { name: "ExpressJS", icon: SiExpress, color: SiExpressHex },
+                { name: "Laravel", icon: SiLaravel, color: SiLaravelHex },
+                {
+                    name: "CodeIgniter",
+                    icon: SiCodeigniter,
+                    color: SiCodeigniterHex,
+                },
+            ],
+        },
+        {
+            category: "Database",
+            items: [
+                { name: "MySQL", icon: SiMysql, color: SiMysqlHex },
+                {
+                    name: "PostgreSQL",
+                    icon: SiPostgresql,
+                    color: SiPostgresqlHex,
+                },
+                { name: "Redis", icon: SiRedis, color: SiRedisHex },
+            ],
+        },
     ],
 };
 
