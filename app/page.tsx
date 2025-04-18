@@ -7,19 +7,17 @@ import { Hero } from "@/components/Hero";
 import { NavbarComponent } from "@/components/Navbar";
 import { Projects } from "@/components/Projects";
 import { Skills } from "@/components/Skills";
-import Head from "next/head";
+import Script from "next/script";
 // import { AiChat } from "@/components/ui/ai-chat";
 
 export default function Home() {
     return (
         <main className="bg-background">
-            <Head>
-                <script
-                    defer
-                    src="https://static.cloudflareinsights.com/beacon.min.js"
-                    data-cf-beacon='{"token": "43be9401fc734db6ab6a825e15469fe3"}'
-                ></script>
-            </Head>
+            <Script
+                src="https://static.cloudflareinsights.com/beacon.min.js"
+                data-cf-beacon='{"token": "43be9401fc734db6ab6a825e15469fe3"}'
+                strategy="afterInteractive"
+            />
             <NavbarComponent />
             <Hero />
             <Container>
