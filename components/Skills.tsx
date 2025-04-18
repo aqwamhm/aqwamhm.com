@@ -3,7 +3,7 @@ import { skills } from "@/content";
 
 export const Skills = () => {
     return (
-        <section className="min-h-screen py-16 text-white flex flex-col justify-center">
+        <section className="min-h-screen py-16 text-white flex flex-col justify-center pt-36">
             <h2 className="text-white text-5xl md:text-6xl text-center font-bold mb-20">
                 {skills.headline}
             </h2>
