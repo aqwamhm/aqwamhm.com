@@ -5,9 +5,6 @@ import {
     SiCodeigniterHex,
     SiExpress,
     SiExpressHex,
-    SiGit,
-    SiGithub,
-    SiGitlab,
     SiJavascript,
     SiJavascriptHex,
     SiJquery,
@@ -282,6 +279,7 @@ export const certificationsAndAwards: CertificationsAndAwards = {
             description:
                 "Completed comprehensive training in React development, mastering core concepts like component-based architecture, state management, and hooks, while building scalable and interactive web applications.",
             images: [
+                "/images/certifications/Menjadi React Web Developer Expert.jpg",
                 "/images/certifications/Belajar Fundamental Aplikasi Web dengan React.jpg",
                 "/images/certifications/Belajar Membuat Aplikasi Web dengan React.jpg",
             ],
