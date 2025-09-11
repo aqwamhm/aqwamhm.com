@@ -250,6 +250,15 @@ export const certificationsAndAwards: CertificationsAndAwards = {
     subheadline: "",
     certifications: [
         {
+            title: "Maqdis Academy Backend Developer Internship",
+            date: "April 14, 2025 - July 10, 2025",
+            description:
+                "Completed an intensive backend development internship program working on the Hamim Web App, a Quran memorization and learning platform. Gained hands-on experience in building and maintaining RESTful APIs using Lumen, a lightweight micro-framework based on Laravel. Developed expertise in refactoring legacy codebases to improve code quality, maintainability, and performance. Strengthened collaborative skills through close work with frontend developers and UI/UX designers, ensuring seamless integration between backend services and user interfaces. Enhanced professional competencies through active participation in team discussions and project planning meetings.",
+            images: [
+                "/images/certifications/Maqdis Academy Backend Developer Internship.jpg",
+            ],
+        },
+        {
             title: "Dicoding Back-End Developer Certifications",
             date: "July-August 2024",
             description:
