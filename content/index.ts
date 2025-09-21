@@ -70,11 +70,10 @@ interface ProjectCard {
     githubLink: string;
 }
 
-interface CertificationsAndAwards {
+interface Certifications {
     headline: string;
     subheadline: string;
     certifications: Certification[];
-    awards: Award[];
 }
 
 export interface Certification {
@@ -245,8 +244,8 @@ export const projects = {
     ] as ProjectCard[],
 };
 
-export const certificationsAndAwards: CertificationsAndAwards = {
-    headline: "Certifications and Awards",
+export const certifications: Certifications = {
+    headline: "Certifications",
     subheadline: "",
     certifications: [
         {
@@ -292,20 +291,6 @@ export const certificationsAndAwards: CertificationsAndAwards = {
                 "/images/certifications/Belajar Fundamental Aplikasi Web dengan React.jpg",
                 "/images/certifications/Belajar Membuat Aplikasi Web dengan React.jpg",
             ],
-        },
-    ],
-    awards: [
-        {
-            title: "Third Place in Arabic Quran Interpretation at West Java MTQ (Musabaqah Tilawatil Qur'an) Provincial Competition",
-            date: "May 2024",
-        },
-        {
-            title: "First Place in Arabic Quran Interpretation at Depok MTQ (Musabaqah Tilawatil Qur'an) City Competition",
-            date: "October 2023",
-        },
-        {
-            title: "First Place in Arabic Quran Interpretation at Depok STQH (Seleksi Tilawatil Qur'an dan Hadits) City Competition",
-            date: "November 2022",
         },
     ],
 };

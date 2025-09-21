@@ -1,5 +1,5 @@
 import { About } from "@/components/About";
-import { CertificationsAndAwards } from "@/components/CertificationsAndAwards";
+import { Certifications } from "@/components/Certifications";
 import { Contact } from "@/components/Contact";
 import { Container } from "@/components/Container";
 import Footer from "@/components/Footer";
@@ -24,7 +24,7 @@ export default function Home() {
                 <About />
                 <Skills />
                 <Projects />
-                <CertificationsAndAwards />
+                <Certifications />
                 <Contact />
             </Container>
             {/* <AiChat /> */}

@@ -10,9 +10,9 @@ import {
     DialogTitle,
 } from "./ui/dialog";
 import ExportedImage from "next-image-export-optimizer";
-import { Certification, certificationsAndAwards } from "@/content";
+import { Certification, certifications } from "@/content";
 
-export const CertificationsAndAwards = () => {
+export const Certifications = () => {
     const [selectedCertification, setSelectedCertification] =
         useState<Certification | null>(null);
 
@@ -27,12 +27,12 @@ export const CertificationsAndAwards = () => {
     return (
         <section id="certifications" className="pt-36">
             <h1 className="text-white text-center text-5xl md:text-6xl font-bold mb-12">
-                Certifications and Awards
+                Certifications
             </h1>
             <div className="relative flex flex-col items-center justify-center overflow-hidden ">
                 <Marquee className="[--duration:20s]">
-                    {certificationsAndAwards.certifications.map(
-                        (certification, index) => {
+                    {certifications.certifications.map(
+                        (certification: Certification, index: number) => {
                             return (
                                 <Card
                                     className="w-96 hover:bg-secondary/15 hover:cursor-pointer hover:border-primary transition-colors duration-200"
@@ -47,6 +47,25 @@ export const CertificationsAndAwards = () => {
                                             {certification.date}
                                         </CardDescription>
                                     </CardHeader>
+                                    {certification.images &&
+                                        certification.images.length > 0 && (
+                                            <div className="px-3 pb-3">
+                                                <ExportedImage
+                                                    src={
+                                                        certification.images[0]
+                                                    }
+                                                    alt={`${certification.title} certificate`}
+                                                    className="rounded-lg w-full h-auto"
+                                                    width={400}
+                                                    height={200}
+                                                    sizes="100vw"
+                                                    style={{
+                                                        width: "100%",
+                                                        height: "auto",
+                                                    }}
+                                                />
+                                            </div>
+                                        )}
                                 </Card>
                             );
                         }
@@ -101,27 +120,6 @@ export const CertificationsAndAwards = () => {
                         </DialogContent>
                     )}
                 </Dialog>
-            </div>
-            <div className="relative flex flex-col items-center justify-center overflow-hidden ">
-                <Marquee className="[--duration:20s]" reverse>
-                    {certificationsAndAwards.awards.map((award, index) => {
-                        return (
-                            <Card
-                                className="w-96 hover:bg-secondary/15 hover:border-primary transition-colors duration-200"
-                                key={index}
-                            >
-                                <CardHeader>
-                                    <CardTitle>{award.title}</CardTitle>
-                                    <CardDescription>
-                                        {award.date}
-                                    </CardDescription>
-                                </CardHeader>
-                            </Card>
-                        );
-                    })}
-                </Marquee>
-                <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-background"></div>
-                <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-background"></div>
             </div>
         </section>
     );
