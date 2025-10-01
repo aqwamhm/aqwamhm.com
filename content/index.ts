@@ -292,6 +292,15 @@ export const certifications: Certifications = {
                 "/images/certifications/Belajar Membuat Aplikasi Web dengan React.jpg",
             ],
         },
+        {
+            title: "OpenJS NodeJS Application Developer Certification",
+            date: "September 20, 2025",
+            description:
+                "Completed comprehensive training in Node.js application development, mastering core concepts including Buffer and Streams, Control flow, Child Processes, Diagnostics, Error Handling, Node.js CLI, Events, File System, Module system, Process/Operating System, Package.json, and Unit Testing.",
+            images: [
+                "/images/certifications/OpenJS NodeJS Application Developer Certification.jpg",
+            ],
+        },
     ],
 };
 
