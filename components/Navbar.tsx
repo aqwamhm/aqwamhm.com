@@ -42,9 +42,9 @@ export function NavbarComponent() {
             <div
                 className={`transition-colors duration-300 ${
                     isAtTop && !isOpen
-                        ? "bg-black/0"
-                        : "bg-black/15 backdrop-blur-md"
-                } shadow text-white`}
+                        ? "bg-background/0"
+                        : "bg-background/15 backdrop-blur-md"
+                } shadow text-primary-text`}
             >
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex items-center justify-between h-16">
@@ -92,7 +92,7 @@ export function NavbarComponent() {
                                     <TooltipContent
                                         side="bottom"
                                         sideOffset={5}
-                                        className="bg-secondary/25 z-30 mt-3 text-white px-3 py-2 rounded-md shadow-lg text-sm"
+                                        className="bg-secondary/25 z-30 mt-3 text-primary-text px-3 py-2 rounded-md shadow-lg text-sm"
                                     >
                                         <div className="flex items-center space-x-2">
                                             <p>I stand with Palestine</p>
@@ -113,7 +113,7 @@ export function NavbarComponent() {
                                     <Link
                                         key={index}
                                         href={item.url}
-                                        className="text-white hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
+                                        className="text-primary-text hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
                                     >
                                         {item.text}
                                     </Link>
@@ -123,7 +123,7 @@ export function NavbarComponent() {
                         <div className="md:hidden">
                             <button
                                 onClick={() => setIsOpen(!isOpen)}
-                                className="inline-flex items-center justify-center p-2 rounded-md hover:bg-secondary transition-colors duration-200"
+                                className="inline-flex items-center justify-center p-2 rounded-md hover:bg-secondary transition-colors duration-200 text-primary-text"
                             >
                                 <span className="sr-only">Open main menu</span>
                                 {isOpen ? (
@@ -142,7 +142,7 @@ export function NavbarComponent() {
                                 <Link
                                     key={index}
                                     href={item.url}
-                                    className="text-white hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
+                                    className="text-primary-text hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
                                     onClick={() => setIsOpen(false)}
                                 >
                                     {item.text}

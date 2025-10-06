@@ -13,10 +13,10 @@ export const SocialIcons = () => {
                         href={social.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="p-6 outline outline-1 outline-white rounded-xl hover:bg-primary/20 hover:outline-primary flex items-center justify-center transition-all duration-200"
+                        className="p-6 outline outline-1 outline-text-muted rounded-xl hover:bg-primary/20 hover:outline-primary flex items-center justify-center transition-all duration-200"
                         aria-label={social.name}
                     >
-                        <IconComponent className="text-white text-4xl" />
+                        <IconComponent className="text-primary-text text-4xl" />
                     </Link>
                 );
             })}

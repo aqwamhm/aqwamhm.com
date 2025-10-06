@@ -23,7 +23,7 @@ export function ErrorAlert({
     return (
         <div className="absolute top-2 left-1/2 transform -translate-x-1/2 z-[100]">
             <div
-                className={`bg-red-500 text-white px-4 py-2 rounded-lg shadow-lg flex items-center space-x-2 transition-opacity duration-300 ease-in-out ${
+                className={`bg-red-500 text-primary-text px-4 py-2 rounded-lg shadow-lg flex items-center space-x-2 transition-opacity duration-300 ease-in-out ${
                     isVisible ? "opacity-100" : "opacity-0"
                 }`}
             >

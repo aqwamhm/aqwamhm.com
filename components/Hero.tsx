@@ -17,7 +17,7 @@ export const Hero = () => {
                     "[mask-image:radial-gradient(275px_circle_at_center,white,transparent)]"
                 )}
             />
-            <Container className="text-center text-white z-10">
+            <Container className="text-center text-primary-text z-10">
                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8">
                     {hero.headline}
                 </h1>

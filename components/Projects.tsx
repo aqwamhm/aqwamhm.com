@@ -7,10 +7,10 @@ import Link from "next/link";
 export const Projects = () => {
     return (
         <section id="projects" className="pt-16">
-            <h1 className="text-white text-5xl md:text-6xl text-center font-bold mb-5">
+            <h1 className="text-primary-text text-5xl md:text-6xl text-center font-bold mb-5">
                 {projects.headline}
             </h1>
-            <h2 className="text-white text-center text-lg md:text-xl mb-12">
+            <h2 className="text-secondary-text text-center text-lg md:text-xl mb-12">
                 {projects.subheadline}
             </h2>
             <div className="flex flex-wrap justify-around items-stretch">
@@ -29,10 +29,10 @@ export const Projects = () => {
                             className="rounded-lg"
                         />
                         <div className="mt-4">
-                            <h3 className="text-xl text-white font-bold">
+                            <h3 className="text-xl text-primary-text font-bold">
                                 {card.title}
                             </h3>
-                            <p className="text-gray-400 mt-2">
+                            <p className="text-muted-text mt-2">
                                 {card.description}
                             </p>
                             <div className="flex space-x-3 mt-4">

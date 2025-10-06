@@ -14,6 +14,12 @@ const config: Config = {
                 primary: "rgb(var(--color-primary) / <alpha-value>)",
                 secondary: "rgb(var(--color-secondary) / <alpha-value>)",
                 accent: "rgb(var(--color-accent) / <alpha-value>)",
+                "primary-light": "rgb(34, 211, 238 / <alpha-value>)",
+                "primary-dark": "rgb(8, 145, 178 / <alpha-value>)",
+                "text-primary": "rgb(248, 250, 252 / <alpha-value>)",
+                "text-secondary": "rgb(203, 213, 225 / <alpha-value>)",
+                "text-muted": "rgb(148, 163, 184 / <alpha-value>)",
+                "card-bg": "rgb(30, 41, 59 / <alpha-value>)",
             },
             animation: {
                 "shimmer-slide":

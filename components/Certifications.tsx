@@ -26,7 +26,7 @@ export const Certifications = () => {
 
     return (
         <section id="certifications" className="pt-36">
-            <h1 className="text-white text-center text-5xl md:text-6xl font-bold mb-12">
+            <h1 className="text-primary-text text-center text-5xl md:text-6xl font-bold mb-12">
                 Certifications
             </h1>
             <div className="relative flex flex-col items-center justify-center overflow-hidden ">
@@ -80,15 +80,17 @@ export const Certifications = () => {
                     {selectedCertification && (
                         <DialogContent className="max-w-3xl max-h-[80vh] overflow-y-scroll bg-accent/15 backdrop-blur-sm">
                             <DialogHeader>
-                                <DialogTitle className="text-left">
+                                <DialogTitle className="text-left text-primary-text">
                                     {selectedCertification.title}
                                 </DialogTitle>
-                                <DialogDescription className="text-left">
+                                <DialogDescription className="text-left text-secondary-text">
                                     {selectedCertification.date}
                                 </DialogDescription>
                             </DialogHeader>
                             <div className="p-4 space-y-4">
-                                <p>{selectedCertification.description}</p>
+                                <p className="text-primary-text">
+                                    {selectedCertification.description}
+                                </p>
                                 <div
                                     className={`flex ${
                                         selectedCertification.images.length > 1

@@ -6,10 +6,10 @@ export const About = () => {
     return (
         <section id="about" className="pt-36 flex lg:flex-row flex-col">
             <div className="basis-8/12">
-                <h1 className="text-white text-5xl md:text-6xl font-bold mb-3">
+                <h1 className="text-primary-text text-5xl md:text-6xl font-bold mb-3">
                     {aboutMe.headline}
                 </h1>
-                <p className="text-white text-lg md:text-xl">
+                <p className="text-secondary-text text-lg md:text-xl">
                     <b>Salaam 👋</b>
                     <br />
                     {aboutMe.paragraph}
