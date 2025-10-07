@@ -66,7 +66,7 @@ export const Contact = () => {
                             variants={itemVariants}
                             className="text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent leading-tight pb-2"
                         >
-                            Let's Build Something Incredible Together!
+                            Let&#39;s Build Something Incredible Together!
                         </motion.h1>
                     </motion.div>
                     <Link
