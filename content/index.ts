@@ -250,7 +250,7 @@ export const certifications: Certifications = {
     certifications: [
         {
             title: "Maqdis Academy Backend Developer Internship",
-            date: "April 14, 2025 - July 10, 2025",
+            date: "April 2025",
             description:
                 "Completed an intensive backend development internship program working on the Hamim Web App, a Quran memorization and learning platform. Gained hands-on experience in building and maintaining RESTful APIs using Lumen, a lightweight micro-framework based on Laravel. Developed expertise in refactoring legacy codebases to improve code quality, maintainability, and performance. Strengthened collaborative skills through close work with frontend developers and UI/UX designers, ensuring seamless integration between backend services and user interfaces. Enhanced professional competencies through active participation in team discussions and project planning meetings.",
             images: [
@@ -294,9 +294,9 @@ export const certifications: Certifications = {
         },
         {
             title: "OpenJS NodeJS Application Developer Certification",
-            date: "September 20, 2025",
+            date: "September 2025",
             description:
-                "Completed comprehensive training in Node.js application development, mastering core concepts including Buffer and Streams, Control flow, Child Processes, Diagnostics, Error Handling, Node.js CLI, Events, File System, Module system, Process/Operating System, Package.json, and Unit Testing.",
+                "Passed the OpenJS NodeJS Application Developer exam by OpenJS Foundation, mastering core concepts including Buffer and Streams, Control flow, Child Processes, Diagnostics, Error Handling, Node.js CLI, Events, File System, Module system, Process/Operating System, Package.json, and Unit Testing.",
             images: [
                 "/images/certifications/OpenJS NodeJS Application Developer Certification.jpg",
             ],
