@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { skills } from "@/content";
 import { MagicCard } from "@/components/ui/magic-card";
