@@ -4,9 +4,7 @@ import React from "react";
 import { SocialIcons } from "./SocialIcons";
 import { aboutMe } from "@/content";
 import { MagicCard } from "./ui/magic-card";
-import AnimatedShinyText from "./ui/animated-shiny-text";
 import { motion } from "framer-motion";
-import { User, MapPin, GraduationCap, Code } from "lucide-react";
 
 export const About = () => {
     const containerVariants = {

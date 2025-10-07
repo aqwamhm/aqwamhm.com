@@ -31,14 +31,12 @@ import {
     SiRedis,
     SiRedisHex,
     SiShadcnui,
-    SiTailwindcss,
     SiTypescript,
     SiTypescriptHex,
     SiVuedotjs,
     SiVuedotjsHex,
     SiVuetify,
 } from "@icons-pack/react-simple-icons";
-import { color } from "framer-motion";
 
 interface NavbarItem {
     text: string;

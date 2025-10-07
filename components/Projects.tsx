@@ -7,7 +7,7 @@ import ExportedImage from "next-image-export-optimizer";
 import { projects } from "@/content";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ExternalLink, Github, Code2 } from "lucide-react";
+import { ExternalLink, Code2 } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 
 export const Projects = () => {

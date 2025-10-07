@@ -2,11 +2,10 @@
 
 import React from "react";
 import { GlowingButton } from "./ui/GlowingButton";
-import { MagicCard } from "./ui/magic-card";
 import AnimatedShinyText from "./ui/animated-shiny-text";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Mail, MessageSquare, Send, Sparkles } from "lucide-react";
+import { Sparkles } from "lucide-react";
 
 export const Contact = () => {
     const containerVariants = {
@@ -34,7 +33,7 @@ export const Contact = () => {
     return (
         <section
             id="contact"
-            className="min-h-screen py-16 pt-36 relative overflow-hidden flex items-center"
+            className="min-h-screen py-16 pt-36 relative overflow-hidden"
         >
             {/* Background decoration */}
             <div className="absolute inset-0 -z-10">

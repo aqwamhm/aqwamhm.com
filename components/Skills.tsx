@@ -1,5 +1,4 @@
-"use client";
-import React, { useState } from "react";
+import React from "react";
 import { skills } from "@/content";
 import { MagicCard } from "@/components/ui/magic-card";
 import AnimatedShinyText from "@/components/ui/animated-shiny-text";
@@ -47,7 +46,7 @@ export const Skills = () => {
                     viewport={{ once: true }}
                     className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
                 >
-                    {skills.skillList.map((category, categoryIndex) => (
+                    {skills.skillList.map((category) => (
                         <motion.div
                             key={category.category}
                             variants={itemVariants}

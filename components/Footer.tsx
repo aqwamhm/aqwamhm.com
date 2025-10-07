@@ -2,8 +2,9 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Heart, Github, Mail, Linkedin } from "lucide-react";
+import { Mail, Linkedin } from "lucide-react";
 import Link from "next/link";
+import { FaGithub } from "react-icons/fa";
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
@@ -36,7 +37,7 @@ export default function Footer() {
                             className="text-muted-text hover:text-primary transition-colors duration-300"
                             aria-label="GitHub"
                         >
-                            <Github className="w-5 h-5" />
+                            <FaGithub className="w-5 h-5" />
                         </Link>
                         <Link
                             href="https://www.linkedin.com/in/aqwam"

@@ -9,7 +9,7 @@ import Link from "next/link";
 import { Container } from "./Container";
 import { hero } from "@/content";
 import { motion } from "framer-motion";
-import { ArrowDown, Sparkles, Code, Zap } from "lucide-react";
+import { ArrowDown, Code } from "lucide-react";
 
 export const Hero = () => {
     const containerVariants = {
